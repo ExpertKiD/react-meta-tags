@@ -1,3 +1,7 @@
+# jetbrains
 .idea/
 
 node_modules/
+
+# build output
+./lib
