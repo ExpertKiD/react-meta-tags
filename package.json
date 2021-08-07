@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ExpertKiD/react-meta-tags/issues"
   },
-  "homepage": "https://github.com/ExpertKiD/react-meta-tags#readme"
+  "homepage": "https://github.com/ExpertKiD/react-meta-tags#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
