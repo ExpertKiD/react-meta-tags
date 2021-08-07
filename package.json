@@ -1,7 +1,7 @@
 {
-  "name": "react-meta-tags",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@peuconomia/react-meta-tags",
+  "version": "0.0.1a",
+  "description": "SEO meta tags for react-based projects.",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
