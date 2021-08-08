@@ -29,3 +29,4 @@ Example output:
 
 1. [URL Regex](https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url)
 2. [NPM Project Preparation Tutorial](https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c)
+3. [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
