@@ -42,7 +42,7 @@ export const PlayerCard: FC<PlayerCardProps> = (props) => {
 
 export type AppCardProps = {};
 
-const AppCard: FC<AppCardProps> = (props) => {
+export const AppCard: FC<AppCardProps> = (props) => {
   return (
     <>
       <meta name="twitter:card" content="app" />
