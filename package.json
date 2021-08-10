@@ -1,6 +1,6 @@
 {
   "name": "@peuconomia/react-meta-tags",
-  "version": "0.1.0-b",
+  "version": "0.1.0-d",
   "description": "SEO meta tags for react-based projects.",
   "main": "index.js",
   "scripts": {
