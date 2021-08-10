@@ -12,8 +12,8 @@ export const SummaryCard: FC<SummaryCardProps> = (props) => {
   return (
     <>
       <meta name="twitter:card" content="summary" />
-      {props.site && <meta name="twitter:site" content={new URL('https://' + props.site).toString()} />}
-      <meta name="twitter:title" content={`${props.title}`} />
+      {props.site && <meta name="twitter:site" content={props.site} />}
+      <meta name="twitter:title" content={props.title} />
       {props.description && <meta name="twitter:description" content={props.description} />}
       {props.imageUrl && <meta name="twitter:image" content={props.imageUrl.toString()} />}
       {props.imageAlt && <meta name="twitter:image:alt" content={props.imageAlt.substring(0, 420)} />}
