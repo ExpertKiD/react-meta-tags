@@ -4,7 +4,7 @@ export type SummaryCardProps = {
   site?: string;
   title: string;
   description?: string;
-  image?: URL;
+  imageUrl?: URL;
   imageAlt?: string;
 };
 
@@ -12,10 +12,11 @@ export const SummaryCard: FC<SummaryCardProps> = (props) => {
   return (
     <>
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content={new URL('https://' + props.site).toString()} />
-      <meta name="twitter:title" content={`${props.title}`} />
-      <meta name="twitter:description" content="View the album on Flickr." />
-      <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+      {props.site && <meta name="twitter:site" content={props.site} />}
+      <meta name="twitter:title" content={props.title} />
+      {props.description && <meta name="twitter:description" content={props.description} />}
+      {props.imageUrl && <meta name="twitter:image" content={props.imageUrl.toString()} />}
+      {props.imageAlt && <meta name="twitter:image:alt" content={props.imageAlt.substring(0, 420)} />}
     </>
   );
 };
@@ -45,6 +46,7 @@ export type AppCardProps = {};
 export const AppCard: FC<AppCardProps> = (props) => {
   return (
     <>
+      <SummaryCard title={'a'} />
       <meta name="twitter:card" content="app" />
       <meta name="twitter:site" content="@TwitterDev" />
       <meta
