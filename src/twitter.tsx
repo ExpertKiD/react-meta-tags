@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react';
+import React, { ComponentType, FC } from 'react';
 
 export type SummaryCardProps = {
   site?: string;
@@ -6,18 +6,19 @@ export type SummaryCardProps = {
   description?: string;
   imageUrl?: URL;
   imageAlt?: string;
+  ContainerElement: ComponentType<any>;
 };
 
 export const SummaryCard: FC<SummaryCardProps> = (props) => {
   return (
-    <>
+    <props.ContainerElement>
       <meta name="twitter:card" content="summary" />
       {props.site && <meta name="twitter:site" content={props.site} />}
       <meta name="twitter:title" content={props.title} />
       {props.description && <meta name="twitter:description" content={props.description} />}
       {props.imageUrl && <meta name="twitter:image" content={props.imageUrl.toString()} />}
       {props.imageAlt && <meta name="twitter:image:alt" content={props.imageAlt.substring(0, 420)} />}
-    </>
+    </props.ContainerElement>
   );
 };
 
@@ -46,7 +47,6 @@ export type AppCardProps = {};
 export const AppCard: FC<AppCardProps> = (props) => {
   return (
     <>
-      <SummaryCard title={'a'} />
       <meta name="twitter:card" content="app" />
       <meta name="twitter:site" content="@TwitterDev" />
       <meta
