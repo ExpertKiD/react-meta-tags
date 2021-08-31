@@ -1,4 +1,4 @@
-import Country from './models/country';
+import Country from './country';
 
 class Countries {
   static AF = new Country('Afghanistan', 'AF');
@@ -50,8 +50,8 @@ class Countries {
   static CC = new Country('Cocos (Keeling) Islands', 'CC');
   static CO = new Country('Colombia', 'CO');
   static KM = new Country('Comoros', 'KM');
-  static CG = new Country('Congo', 'CG');
-  static CD = new Country('Congo, The Democratic Republic of the Congo', 'CD');
+  static CG = new Country('The Republic of Congo', 'CG');
+  static CD = new Country('The Democratic Republic of the Congo', 'CD');
   static CK = new Country('Cook Islands', 'CK');
   static CR = new Country('Costa Rica', 'CR');
   static CI = new Country('Cote D\'Ivoire', 'CI');
@@ -103,7 +103,7 @@ class Countries {
   static IS = new Country('Iceland', 'IS');
   static IN = new Country('India', 'IN');
   static ID = new Country('Indonesia', 'ID');
-  static IR = new Country('Iran, Islamic Republic Of Iran', 'IR');
+  static IR = new Country('Islamic Republic Of Iran', 'IR');
   static IQ = new Country('Iraq', 'IQ');
   static IE = new Country('Ireland', 'IE');
   static IM = new Country('Isle of Man', 'IM');
@@ -130,7 +130,7 @@ class Countries {
   static LT = new Country('Lithuania', 'LT');
   static LU = new Country('Luxembourg', 'LU');
   static MO = new Country('Macao', 'MO');
-  static MK = new Country('Macedonia, The Former Yugoslav Republic of', 'MK');
+  static MK = new Country('The Former Yugoslav Republic of Macedonia', 'MK');
   static MG = new Country('Madagascar', 'MG');
   static MW = new Country('Malawi', 'MW');
   static MY = new Country('Malaysia', 'MY');
@@ -143,7 +143,7 @@ class Countries {
   static MU = new Country('Mauritius', 'MU');
   static YT = new Country('Mayotte', 'YT');
   static MX = new Country('Mexico', 'MX');
-  static FM = new Country('Micronesia, Federated States of', 'FM');
+  static FM = new Country('Federated States of Micronesia', 'FM');
   static MD = new Country('Moldova, Republic of', 'MD');
   static MC = new Country('Monaco', 'MC');
   static MN = new Country('Mongolia', 'MN');
@@ -215,7 +215,7 @@ class Countries {
   static SY = new Country('Syrian Arab Republic', 'SY');
   static TW = new Country('Taiwan, Province of China', 'TW');
   static TJ = new Country('Tajikistan', 'TJ');
-  static TZ = new Country('Tanzania, United Republic of Tanzania', 'TZ');
+  static TZ = new Country('United Republic of Tanzania', 'TZ');
   static TH = new Country('Thailand', 'TH');
   static TL = new Country('Timor-Leste', 'TL');
   static TG = new Country('Togo', 'TG');
